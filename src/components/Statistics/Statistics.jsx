@@ -8,7 +8,7 @@ import { StatsText } from './Statistics.style';
 export const Statistics = ({ title, stats }) => {
   return (
     <StatsWrapper>
-      {title || <StatsHeader>Upload stats</StatsHeader>}
+      {title && <StatsHeader>Upload stats</StatsHeader>}
 
       <StatsList>
         {stats.map(({ id, label, percentage }) => {
