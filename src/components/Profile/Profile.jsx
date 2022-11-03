@@ -4,7 +4,7 @@ import { WrapperProfile } from './Profile.styled';
 
 export const Profile = ({ user }) => {
   return (
-    <WrapperProfile class="profile">
+    <WrapperProfile>
       <ProfileUsers user={user} />
       <ProfileStats user={user} />
     </WrapperProfile>

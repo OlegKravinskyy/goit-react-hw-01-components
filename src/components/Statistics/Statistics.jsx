@@ -5,13 +5,13 @@ import { StatsList } from './Statistics.style';
 import { StatsItem } from './Statistics.style';
 import { StatsText } from './Statistics.style';
 
-export const Statistics = ({ data }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <StatsWrapper>
-      <StatsHeader>Upload stats</StatsHeader>
+      {title || <StatsHeader>Upload stats</StatsHeader>}
 
       <StatsList>
-        {data.map(({ id, label, percentage }) => {
+        {stats.map(({ id, label, percentage }) => {
           return (
             <StatsItem key={id}>
               <StatsText>{label}</StatsText>
