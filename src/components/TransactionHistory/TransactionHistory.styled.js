@@ -28,5 +28,3 @@ export const TransactionHistoryLine = styled.td`
   padding: 10px;
   font-size: 16px;
 `;
-
-// export
